@@ -1,5 +1,6 @@
 import setuptools
 
+# Configure Egg
 setuptools.setup(
     name = "ufmetadata",
     version = "0.0.1",
