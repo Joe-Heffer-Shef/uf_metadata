@@ -1,14 +1,16 @@
 # Urban Flows Observatory Metadata tools
 
+These are tools and classes to help work with metadata in the [Urban Flows Observatory](https://urbanflows.ac.uk/).
+
 ## Installation
 
-Using pip:
+### Using pip
 
 ```bash
 $ pip install git+https://github.com/Joe-Heffer-Shef/ufmetadata.git
 ```
 
-Using Conda:
+### Using Conda
 
 ```bash
 $ conda env create --name my_environment --file environment.yml
