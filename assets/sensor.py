@@ -2,10 +2,12 @@ import os.path
 import datetime
 import logging
 
+import assets.asset
+
 LOGGER = logging.getLogger(__name__)
 
 
-class Sensor(Asset):
+class Sensor(assets.asset.Asset):
     """
     A sensor registered to the Urban Flows Observatory
     """

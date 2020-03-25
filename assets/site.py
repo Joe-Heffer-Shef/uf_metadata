@@ -2,10 +2,12 @@ import os.path
 import datetime
 import logging
 
+import assets.asset
+
 LOGGER = logging.getLogger(__name__)
 
 
-class Site(Asset):
+class Site(assets.asset.Asset):
     """Physical location"""
     
     def __init__(self, site_id, latitude: float, longitude: float, altitude: float, address, city, country, postcode,
