@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-pip install git+https://github.com/Joe-Heffer-Shef/uf_metadata.git --verbose
+pip install git+https://github.com/Joe-Heffer-Shef/ufmetadata.git
 ```
 
 ## Usage
