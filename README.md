@@ -4,13 +4,18 @@ These are tools and classes to help work with metadata in the [Urban Flows Obser
 
 ## Installation
 
-### Using pip
+### Using Python virtual environments
+
+Create a `venv`:
 
 ```bash
+$ python -m venv my_environment
 $ pip install git+https://github.com/Joe-Heffer-Shef/ufmetadata.git
 ```
 
 ### Using Conda
+
+Create a Conda environment and use pip to install the package from the repository:
 
 ```bash
 $ conda env create --name my_environment --file environment.yml
