@@ -2,6 +2,9 @@
 
 These are tools and classes to help work with metadata in the [Urban Flows Observatory](https://urbanflows.ac.uk/).
 
+* [ufmetadata](https://github.com/Joe-Heffer-Shef/ufmetadata) on Github
+* [ufmetadata](https://pypi.org/project/ufmetadata/) on PyPi
+
 ## Installation
 
 ### Using Python virtual environments
