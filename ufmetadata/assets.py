@@ -13,7 +13,7 @@ class Asset:
     """
     A physical asset registered to the Urban Flows Observatory
     """
-    
+
     def __str__(self):
         """Build asset configuration file"""
 
@@ -22,7 +22,7 @@ class Asset:
         lines.append('begin.asset')
 
         # Build key-value pairs
-        lines.extend(("{}={}".format(key, value if value else '') for key, value in self))
+        lines.extend(("{}={}".format(key, value or '') for key, value in self))
 
         lines.append('end.asset')
 
@@ -38,11 +38,11 @@ class Asset:
     @property
     def subdir(self) -> str:
         parts = ['assets', "{}s".format(self.__class__.__name__.casefold())]
-        
+
         subdir = os.path.join(*parts)
-        
+
         os.makedirs(subdir, exist_ok=True)
-        
+
         return subdir
 
     @property
@@ -78,12 +78,12 @@ class Asset:
             return str()
 
 
-
 class Site(Asset):
     """Physical location"""
-    
-    def __init__(self, site_id, latitude: float, longitude: float, altitude: float, address, city, country, postcode,
-                 first_date: datetime.date, operator: dict, desc_url: str):
+
+    def __init__(self, site_id, latitude: float, longitude: float, altitude: float = None, address=None, city=None,
+                 country=None, postcode=None, first_date: datetime.date = None, operator: dict = None,
+                 desc_url: str = None):
         """
         Sensor site (physical location) registered to the Urban Flows Observatory
 

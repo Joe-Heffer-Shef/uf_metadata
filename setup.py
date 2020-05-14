@@ -14,7 +14,7 @@ with open('README.md') as file:
 setuptools.setup(
     name="ufmetadata",
     description="Urban Flows Observatory (Sheffield) metadata tools",
-    version="0.0.1",
+    version="0.0.2",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
