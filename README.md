@@ -1,4 +1,4 @@
-# Urban Flows Observatory Metadata tools
+# Urban Flows Observatory metadata tools
 
 These are tools and classes to help work with metadata in the [Urban Flows Observatory](https://urbanflows.ac.uk/).
 
@@ -13,7 +13,7 @@ Create a `venv`:
 
 ```bash
 $ python -m venv my_environment
-$ pip install git+https://github.com/Joe-Heffer-Shef/ufmetadata.git
+$ pip install ufmetadata
 ```
 
 ### Using Conda
@@ -34,7 +34,7 @@ dependencies:
   - python
   - pip
   - pip:
-    - git+https://github.com/Joe-Heffer-Shef/ufmetadata.git
+    - ufmetadata
 ```
 
 ## Usage
